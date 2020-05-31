@@ -39,7 +39,7 @@ namespace SD_13_Quiz_ConsoleUI
 
                 if (usersAnswer)
                 {
-                    results += 0.1;
+                    results += 1;
                     Console.WriteLine("\n\tIt is a correct answer!\n");
                 }else
                 {
@@ -52,7 +52,7 @@ namespace SD_13_Quiz_ConsoleUI
             Console.Clear();
 
             Console.WriteLine("\n\n\tYour Quiz ended");
-            Console.WriteLine($"\n\t\tU scored : {Math.Round(results*(100/questions.Count)*100)} % !");
+            Console.WriteLine($"\n\t\tU scored : {Math.Round((results*100)/questions.Count)} % !");
 
             Console.ReadKey();
         }
